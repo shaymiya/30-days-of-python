@@ -1,1 +1,5 @@
 # 30-days-of-python
+
+## Day 01 - INTRODUCTION
+
+## Day 02 - VARIABLES AND BUILD-IN FUNCTIONS
