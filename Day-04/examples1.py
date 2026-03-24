@@ -300,7 +300,7 @@ print(challenge.strip('noth'))
 
 print('-------------------------------------')
 
-# replace(): Replaces substring witha given string
+# replace(): Replaces substring with a given string
 challenge = 'thirty days of python'
 print(challenge.replace('python', 'coding'))
 
