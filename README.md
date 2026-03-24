@@ -8,3 +8,6 @@ Learned more about variables and learned how to type cast variables on the fly t
 
 **DAY 03 - OPERATORS** \
 Learned more about boolean and different types of operators, such as assignment operators (= etc), comparison operators (==, != etc) and logical operators (and, or & not).
+
+**DAY 04 - STRINGS** \
+Learned more about strings and how to handle them with python's build in functions!
