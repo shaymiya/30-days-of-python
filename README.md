@@ -1,5 +1,7 @@
 # 30-days-of-python
 
+[JOIN THE CHALLENGE!](https://github.com/Asabeneh/30-Days-Of-Python)
+
 **DAY 01 - INTRODUCTION** \
 Learned the very basics of python as a language and tested out both Terminal and .py files.
 
@@ -13,4 +15,4 @@ Learned more about boolean and different types of operators, such as assignment 
 Learned more about strings and how to handle them with python's build in functions!
 
 **DAY 05 - LISTS** \
-Learned how to handle and modify lists in python
+Learned how to handle and modify lists in python.
