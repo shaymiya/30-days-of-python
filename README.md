@@ -11,3 +11,6 @@ Learned more about boolean and different types of operators, such as assignment 
 
 **DAY 04 - STRINGS** \
 Learned more about strings and how to handle them with python's build in functions!
+
+**DAY 05 - LISTS** \
+Learned how to handle and utilize lists in python
