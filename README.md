@@ -19,3 +19,6 @@ Learned how to handle and modify lists in Python.
 
 **DAY 06 - TUPLES** \
 Learned more about unmutable tuples and how to use them in Python.
+
+**DAY 07 - SETS** \
+Learned more about sets and how to use them in Python.
