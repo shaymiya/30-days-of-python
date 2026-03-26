@@ -22,3 +22,6 @@ Learned more about unmutable tuples and how to use them in Python.
 
 **DAY 07 - SETS** \
 Learned more about sets and how to use them in Python.
+
+**DAY 08 - DICTIONARIES** \
+Learned more about dictionaries and how to use them in Python.
