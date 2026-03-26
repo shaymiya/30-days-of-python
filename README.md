@@ -25,3 +25,6 @@ Learned more about sets and how to use them in Python.
 
 **DAY 08 - DICTIONARIES** \
 Learned more about dictionaries and how to use them in Python.
+
+**DAY 09 - CONDITIONALS** \
+Learned more about conditionals (if elif else etc) and how to use them in Python.
