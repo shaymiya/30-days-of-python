@@ -28,3 +28,6 @@ Learned more about dictionaries and how to use them in Python.
 
 **DAY 09 - CONDITIONALS** \
 Learned more about conditionals (if elif else etc) and how to use them in Python.
+
+**DAY 10 - LOOPS** \
+Learned more about while and for loops and how to use them in Python.
