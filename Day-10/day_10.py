@@ -111,3 +111,81 @@ for country in countries.countries:
         print(country)
 
 print('----------------------------')
+
+# Reverse the fruit list order using loop
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits)
+for index in range(len(fruits) - 1, -1, -1):
+    print(fruits[index])
+
+print('----------------------------')
+
+# Use the countries_data.py file and do the following operations
+
+from countries_data import countries_data
+
+# What are the total number of languages in data?
+languages = list() # create an empty list for all the languages
+
+for country in countries_data: # iterate through countries
+    for language in country.get('languages'): # iterate through languages
+        # if there is a new language, add the language in the languages list
+        if language not in languages:
+            languages.append(language)
+            print(f'A new language "{language}" added')
+
+print(len(languages))
+
+print('----------------------------')
+
+# Find the ten most spoken languages from the data
+most_spoken_languages = {} #create an empty dictionary for storing the # of speakers
+
+# iterate through countries
+for country in countries_data:
+    # iterate through languages
+    for language in country.get('languages'):
+        # if language does not exist in the dictionary, add it to the dictionary with value of 1
+        if language not in most_spoken_languages:
+            most_spoken_languages[language] = 1
+            print('New language added to the dictionary: ', language)
+        else:
+            # if language exists in the dictionary, add +1 to the value
+            most_spoken_languages[language] += 1
+            print('Language updated: ', language)
+
+# for language, value in most_spoken_languages.items():
+#     print(language, value)
+
+# how to organize the dictionary?
+
+# we can get the max value out of the dictionary
+print('Top speakers: ', max(most_spoken_languages.values()))
+
+# copy dictionary into top ten languages
+top_ten_languages = most_spoken_languages.copy()
+
+# run the loop 10 times
+for i in range(1,11):
+    for language, value in top_ten_languages.items(): # loop through the languages
+        if value == max(top_ten_languages.values()): # find the max value
+            print(i, language, value) # print it out
+            top_ten_languages[language] = 0 # set the max value to 0
+            break # break out the loop and find the next max value
+
+print('----------------------------')
+
+# Find the 10 most populated countries in the world
+most_populated_countries = {}
+
+for country in countries_data:
+    most_populated_countries[country.get('name')] = country.get('population')
+
+for i in range(1,11):
+    for name, population in most_populated_countries.items():
+        if population == max(most_populated_countries.values()):
+            print(i, name, population)
+            most_populated_countries[name] = 0
+            break
+
+print('----------------------------')
