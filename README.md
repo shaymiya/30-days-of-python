@@ -36,4 +36,4 @@ Learned more about while and for loops and how to use them in Python.
 Learned how to create and use our own custom functions in Python.
 
 **DAY 12 - MODULES** \
-Learned how to access and use different modules in Python.
+Learned how to access, create and use different modules in Python.
