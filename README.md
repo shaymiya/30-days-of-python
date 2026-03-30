@@ -31,3 +31,6 @@ Learned more about conditionals (if elif else etc) and how to use them in Python
 
 **DAY 10 - LOOPS** \
 Learned more about while and for loops and how to use them in Python.
+
+**DAY 11 - FUNCTIONS** \
+Learned how to create and use our own custom functions in Python.
