@@ -383,4 +383,136 @@ print('-----------------------------------')
 
 # EXERCISES : LEVEL 3
 
+# Write a function called is_prime, which checks if a number is prime
+# prime number: can be divided only by 1 or itself
+def is_prime(num):
+    for n in range(2, num):
+        print(n, '/', num)
+        if num % n == 0:
+            return False
+    return True
+print('Number is a prime:', is_prime(111))
+num = int(input('Give a number to check > '))
+print('Number', num, 'is a prime:', is_prime(num))
+
+print('-----------------------------------')
+
+# Write a function which checks if all the items are unique in the list
+def is_unique(list):
+    temp_list = []
+    for item in list:
+        if item not in temp_list:
+            temp_list.append(item)
+        else:
+            return f'List contains more than one of: {item}'
+    return f'All the items in the given list are unique'
+
+print(is_unique(numbers))
+print(is_unique(fruits))
+
+print('-----------------------------------')
+
+# Write a function which checks if all the items of the list are of the same
+# data type
+dif_datatypes = ['test', 1, True, 3.5]
+def is_same_datatype(list):
+    data_type = type(list[0])
+    for item in list:
+        if type(item) != data_type:
+            return False
+    return True
+
+print('All the data is of the same type in a list:', is_same_datatype(numbers))
+print('All the data is of the same type in a list:', is_same_datatype(dif_datatypes))
+
+print('-----------------------------------')
+
+# Write a function which check if provided variable is a valid python variable
+def is_valid_variable(var):
+    if var.isidentifier():
+        return True
+    else:
+        return False
+
+print('The given variable is valid identifier:', is_valid_variable('20daysofpython'))
+variable = input('Give a variable name > ')
+print('The given variable is a valid identifier:', is_valid_variable(variable))
+
+print('-----------------------------------')
+
+from countries_data import countries_data
+
+# Create a function called the most_spoken_languages in the world. It should return 10
+# or 20 most spoken languages in the world in descending order
+def most_spoken_languages(data, top_num = 10):
+    # Create a temp directory for storing all languages
+    languages = {}
+    # Create an empty list for organizing the languages
+    most_spoken_languages = []
+
+    # Adding all the languages into the temp directory with the # of speakers
+    for country in data:
+        for language in country['languages']:
+            if language not in languages.keys():
+                # print('Adding a new language to dictionary:', language)
+                languages[language] = 1
+            else:
+                # print('Updating the value of:', language)
+                languages[language] += 1
+    
+    # Organizing the top spoken languages and inserting the value pairs into the list
+    for n in range(len(languages)):
+        for k, v in languages.items():
+            if v == max(languages.values()):
+                # Add the current top language in the list
+                # print('Adding the current top language to list:', k)
+                most_spoken_languages.append(f'{k}: {v} countries')
+                # set the value to 0
+                languages[k] = 0
+    # Delete the temp dictionary
+    del languages
+
+    # Printing the top of the most spoken languages, default top 10
+    result = f'MOST SPOKEN LANGUAGES: TOP {top_num}'
+    for i in range(top_num):
+        result += f'\n{i + 1}. {(most_spoken_languages[i])}'
+    
+    return result
+
+print(most_spoken_languages(countries_data))
+
+print('-----------------------------------')
+
+# Create a function called most_populated_countries. It should return 10 or 20
+# most populated countries in descending order
+def most_populated_countries(countries, top_num = 10):
+    populations = {}
+    most_populated_countries = []
+
+    for country in countries:
+        # Get the name of the country and population + add them to temp dict
+        populations[country['name']] = country['population']
+        # print('Country added to the dictionary:', country['name'])
+    
+    # Organize the dict into a list
+    for i in range(len(populations)):
+        for k, v in populations.items():
+            if v == max(populations.values()):
+                # add the country to the list + set the population to 0 when done
+                # print('New top country added to the list:', k)
+                most_populated_countries.append(f'{k}: {v} people')
+                populations[k] = 0
+    
+    # Delete populations temp dictionary
+    del populations
+
+    # form the result
+    result = f'MOST POPULATED COUNTRIES: TOP {top_num}'
+    for i in range(top_num):
+        result += f'\n{i + 1}. {most_populated_countries[i]}'
+
+    return result
+
+print(most_populated_countries(countries_data))
+
 print('-----------------------------------')
