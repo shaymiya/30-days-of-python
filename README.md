@@ -39,4 +39,4 @@ Learned how to create and use our own custom functions in Python.
 Learned how to access, create and use different modules in Python.
 
 **DAY 12 - LIST COMPREHENSION** \
-Learned about LIST COMPREHENSION and how to use it for more effective ways of handling lists in Python.
+Learned about lambdas and list comprehension and how to use them for more effective ways of handling lists and simpler functions in Python.
